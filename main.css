@@ -1,0 +1,22 @@
+.box {
+    width: 250px;
+    height: 20px; /* width and height set the size of the content box */
+    padding: 20px 1px 15px 40px; /* TRBL - top, right, bottom, left - respectively */
+    border: 5px solid black; /* set the border on every side to be 2px wide, solid line, and green background color */
+    /* alternatively, we could use apply these styles individually:
+    border-width: 2px;
+    border-style: solid;
+    border-color: green;
+    */
+    margin-top: 10px; /* set the margin on the top to be 10 pixels */
+    /* alternatively, we could use shorthand if we want to apply a margin on all sides:
+    margin: 10px; */
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+fieldset {
+    width: 400px;
+}

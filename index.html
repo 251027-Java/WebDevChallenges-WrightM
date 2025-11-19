@@ -2,9 +2,12 @@
 
 <html lang="en">
     <head>
+        <link rel="stylesheet" href="./main.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     </head>
     <body>
-        <div>
+        <div class="box">
             <span>an image</span>
         </div>
         <h1>About</h1>
@@ -13,20 +16,20 @@
                 Some text about the website
             </p>
         </div>
-        <h2>Our Locations</h2>
+        <h2 style="padding-top: 30px;">Our Locations</h2>
         <ul>
             <li>USA
                 <ul>
-                    <li>New York</li>
-                    <li>Columbus</li>
-                    <li>Austin</li>
-                    <li>Philly</li>
+                    <li><a href="#">New York</a></li>
+                    <li><a href="#">Columbus</a></li>
+                    <li><a href="#">Austin</a></li>
+                    <li><a href="#">Philly</a></li>
                 </ul>
             </li>
             <li>World
                 <ul>
-                    <li>Ottowa</li>
-                    <li>Sydney</li>
+                    <li><a href="#">Ottowa</a></li>
+                    <li><a href="#">Sydney</a></li>
                 </ul>
             </li>
         </ul>
@@ -67,10 +70,29 @@
                     <option value="1">San Francisco</option>
                 </select>
             </div>
-            <div>
-                Gender:
-                <input type="checkbox" name="" value="1"> Male
+            <form>
+                <fieldset>
+                <legend>Gender:</legend>
+                Female <input type="checkbox" name="" value="0">
+                Male <input type="checkbox" name="" value="1">
+                </fieldset>
+            </form>
             </div>
+            Experience:
+            <div>
+                <textarea name="textarea" rows="2" cols="20">
+                </textarea>
+            </div>
+            <button type="submit">Sign Up</button>
         </form>
     </body>
+    <footer>
+        <div>
+            <span><a href="#">Twitter</a></span>
+            |
+            <span><a href="#">Facebook</a></span>
+            |
+            <span><a href="#">Flickr</a></span>
+        </div>
+    </footer>
 </html>
