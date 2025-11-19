@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Greeting Input</title>
+    <title>Square Input</title>
   </head>
   <body>
-    <h2>Enter your name:</h2>
-    <input type="text" id="nameInput" placeholder="Your name here">
-    <button onclick="greetUser()">Greet Me</button>
+    <h2>Enter a number:</h2>
+    <input type="number" id="numInput" placeholder="Number">
+    <button onclick="square()">Square It!</button>
 
     <script>
-      function greetUser() {
-        let name = document.getElementById("nameInput").value;
-        if (name === "") {
-          alert("Please enter your name first!");
+      function square() {
+        let num = document.getElementById("numInput").value;
+        if (num === "") {
+          alert("Please enter your number first!");
           return;
         }
-        alert("Hello, " + name + "!");
+        alert("Square: " + (num * num));
       }
     </script>
   </body>
