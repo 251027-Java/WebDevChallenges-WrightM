@@ -28,3 +28,11 @@ fieldset {
     align-content: center;
     margin: 0 auto;
 }
+
+ul li {
+  text-align: center; 
+}
+
+li {
+    padding-left: 10px;
+}
