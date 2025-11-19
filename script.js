@@ -1,12 +1,8 @@
-function redAndBold() {
-    document.getElementById("mainParagraph").style.color = "red";
-    document.getElementById("mainParagraph").style.fontWeight = "bold";
+function addToList() {
+    let ul = document.getElementById("mainList");
+    let li = document.createElement("li");
+    li.textContent = "New Item";
+    ul.appendChild(li);
 }
 
-function normal() {
-    document.getElementById("mainParagraph").style.color = "black";
-    document.getElementById("mainParagraph").style.fontWeight = "normal";
-}
-
-document.getElementById("redandBoldBtn").addEventListener("click", redAndBold);
-document.getElementById("normalBtn").addEventListener("click", normal);
+document.getElementById("addToList").addEventListener("click", addToList);
