@@ -1,40 +1,5 @@
-function addNumbers() {
-  let n1 = Number(document.getElementById("num1").value);
-  let n2 = Number(document.getElementById("num2").value);
-  let sum = n1 + n2;
-
-  document.getElementById("result").textContent = "Result: " + sum;
+function changeHeader() {
+    document.getElementById("mainHeader").textContent = "You clicked the button!";
 }
 
-function subtractNumbers() {
-  let n1 = Number(document.getElementById("num1").value);
-  let n2 = Number(document.getElementById("num2").value);
-  let difference = n1 - n2;
-
-  document.getElementById("result").textContent = "Result: " + difference;
-}
-
-function multiplyNumbers() {
-  let n1 = Number(document.getElementById("num1").value);
-  let n2 = Number(document.getElementById("num2").value);
-  let product = n1 * n2;
-
-  document.getElementById("result").textContent = "Result: " + product;
-}
-
-function divideNumbers() {
-  let n1 = Number(document.getElementById("num1").value);
-  let n2 = Number(document.getElementById("num2").value);
-  if (n2 === 0) {
-    document.getElementById("result").textContent = "Error: Division by zero";
-    return;
-  }
-  let quotient = n1 / n2;
-
-  document.getElementById("result").textContent = "Result: " + quotient;
-}
-
-document.getElementById("divideBtn").addEventListener("click", divideNumbers);
-document.getElementById("multiplyBtn").addEventListener("click", multiplyNumbers);
-document.getElementById("subtractBtn").addEventListener("click", subtractNumbers);
-document.getElementById("addBtn").addEventListener("click", addNumbers);
+document.getElementById("changeHeader").addEventListener("click", changeHeader);
