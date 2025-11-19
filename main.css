@@ -31,4 +31,17 @@ fieldset {
 
 li {
     padding-left: 10px;
+    margin: 0 auto;
+}
+
+.hobbies {
+    display: flex;
+    margin: 4vh auto 4vh;
+}
+
+.myimage {
+    width: 300px;
+    height: auto;
+    border: 5px solid black;
+    border-radius: 10px;
 }
