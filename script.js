@@ -1,11 +1,40 @@
-function greetUser() {
-  let name = document.getElementById("nameInput").value;
-  let color = document.getElementById("colorInput").value;
-  if (name.trim() === "") {
-    alert("Please enter your name first!");
-  } else {
-    alert("Hello, " + name + "! Your favorite color is " + color + "!");
-  }
+function addNumbers() {
+  let n1 = Number(document.getElementById("num1").value);
+  let n2 = Number(document.getElementById("num2").value);
+  let sum = n1 + n2;
+
+  document.getElementById("result").textContent = "Result: " + sum;
 }
 
-document.getElementById("greetBtn").addEventListener("click", greetUser);
+function subtractNumbers() {
+  let n1 = Number(document.getElementById("num1").value);
+  let n2 = Number(document.getElementById("num2").value);
+  let difference = n1 - n2;
+
+  document.getElementById("result").textContent = "Result: " + difference;
+}
+
+function multiplyNumbers() {
+  let n1 = Number(document.getElementById("num1").value);
+  let n2 = Number(document.getElementById("num2").value);
+  let product = n1 * n2;
+
+  document.getElementById("result").textContent = "Result: " + product;
+}
+
+function divideNumbers() {
+  let n1 = Number(document.getElementById("num1").value);
+  let n2 = Number(document.getElementById("num2").value);
+  if (n2 === 0) {
+    document.getElementById("result").textContent = "Error: Division by zero";
+    return;
+  }
+  let quotient = n1 / n2;
+
+  document.getElementById("result").textContent = "Result: " + quotient;
+}
+
+document.getElementById("divideBtn").addEventListener("click", divideNumbers);
+document.getElementById("multiplyBtn").addEventListener("click", multiplyNumbers);
+document.getElementById("subtractBtn").addEventListener("click", subtractNumbers);
+document.getElementById("addBtn").addEventListener("click", addNumbers);
