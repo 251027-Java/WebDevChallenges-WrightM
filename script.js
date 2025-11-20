@@ -1,4 +1,4 @@
 
-const nums = [10, 15, 20, 25, 30];
+const makeObject = (title, author) => ({ title, author});
 
-console.log(nums.filter(num => num % 2 == 0));
+console.log(makeObject("Book Title", "Author Name"));
