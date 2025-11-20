@@ -1,10 +1,5 @@
-function changeColor() {
-    let color = document.body.style.backgroundColor;
-    if (color === 'lightblue') {
-        document.body.style.backgroundColor = 'white';
-    } else {
-        document.body.style.backgroundColor = 'lightblue';
-    }
+function toggleDarkMode() {
+    document.body.classList.toggle("darkmode");
 }
 
-document.getElementById("changeColor").addEventListener("click", changeColor);
+document.getElementById("changeMode").addEventListener("click", toggleDarkMode);
