@@ -1,4 +1,4 @@
 
+const nums = [1, 2, 3, 4, 5];
 
-square => a => a*a;
-console.log(square(5));
+console.log(nums.map(num => num*num));
