@@ -1,15 +1,14 @@
-const url = "https://jsonplaceholder.typicode.com/posts";
+const url = "https://jsonplaceholder.typicode.com/posts/";
 
 function loadContent() {
-    fetch(url)
+    const id = document.getElementById('postId').value;
+    fetch(url + id)
     .then(response => response.json())
-    .then(posts => {
-        posts.slice(0, 5).forEach(post => {
-        const item = document.createElement('div');
-        item.innerHTML = `<h3>${post.title}</h3><p>${post.body}</p>`;
-        document.body.appendChild(item);
-    })})
+    .then(data => {
+        
+        document.getElementById("output").innerHTML = `<h3>${data.title}</h3><p>${data.body}</p>`;
+    })
     .catch(error => console.error("Error when fetching data:", error));
 };
 
-document.getElementById("loadContent").addEventListener("click", loadContent);
+document.getElementById("fetchBtn").addEventListener("click", loadContent);
