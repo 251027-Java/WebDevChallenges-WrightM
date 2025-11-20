@@ -7,6 +7,7 @@ function loadContent() {
     .then(data => {
         if (!data.title) {
             document.getElementById("output").innerHTML = "<p>No post found with that ID.</p>";
+            return;
         }
         document.getElementById("output").innerHTML = `<h3>${data.title}</h3><p>${data.body}</p>`;
     })
