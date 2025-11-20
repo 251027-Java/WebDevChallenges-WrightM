@@ -1,6 +1,7 @@
 const url = "https://jsonplaceholder.typicode.com/posts";
 
-fetch(url)
+function loadContent() {
+    fetch(url)
     .then(response => response.json())
     .then(posts => {
         posts.slice(0, 5).forEach(post => {
@@ -9,3 +10,6 @@ fetch(url)
         document.body.appendChild(item);
     })})
     .catch(error => console.error("Error when fetching data:", error));
+};
+
+document.getElementById("loadContent").addEventListener("click", loadContent);
