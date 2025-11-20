@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Dark Mode</title>
-    <link rel="stylesheet" href="main.css">
+    <title>To-Do List</title>
+    <style>
+      .done {
+        text-decoration: line-through;
+        color: gray;
+      }
+    </style>
   </head>
   <body>
-
-    <button id="changeMode">Change Mode</button>
-
-    <div><p>Some Text</p></div>
+    <h1>My To-Do List</h1>
+    <input type="text" id="taskInput" placeholder="New task">
+    <button id="addTask">Add</button>
+    <ul id="taskList"></ul>
 
     <script src="script.js"></script>
   </body>
